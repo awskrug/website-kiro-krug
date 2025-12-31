@@ -325,7 +325,7 @@ async function loadAndRenderEvents() {
                             <span>${escapeHtml(event.location)}</span>
                         </div>
                         ${!isPast ? `
-                            <a href="${escapeHtml(event.link)}" class="event-link" aria-label="${escapeHtml(event.title)} 자세히 보기">
+                            <a href="${escapeHtml(event.link)}" target="_blank" rel="noopener noreferrer" class="event-link" aria-label="${escapeHtml(event.title)} 자세히 보기 (새 탭에서 열림)">
                                 자세히 보기
                                 <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
                                     <path d="M5 12h14M12 5l7 7-7 7" />
